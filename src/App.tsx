@@ -123,7 +123,7 @@ function App() {
         textAlign: "center"
       }}>
         <h1 style={{ 
-          color: "#333", 
+          color: "#171515ff", 
           fontSize: "2rem", 
           marginBottom: "30px"
         }}>
@@ -160,7 +160,7 @@ function App() {
               fontSize: "16px",
               border: "none",
               borderRadius: "5px",
-              background: loading ? "#ccc" : "#007bff",
+              background: loading ? "#ccc" : "#0a2139ff",
               color: "white",
               cursor: loading ? "not-allowed" : "pointer"
             }}
