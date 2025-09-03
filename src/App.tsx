@@ -204,9 +204,9 @@ function App() {
                 <button
                   onClick={() => setIsCelsius(true)}
                   style={{
-                    background: isCelsius ? "#007bff" : "white",
-                    color: isCelsius ? "white" : "#007bff",
-                    border: "1px solid #007bff",
+                    background: isCelsius ? "#0d1b2bff" : "white",
+                    color: isCelsius ? "white" : "#071421ff",
+                    border: "1px solid #0a1d31ff",
                     borderRadius: "5px",
                     padding: "5px 10px",
                     fontSize: "12px",
@@ -218,9 +218,9 @@ function App() {
                 <button
                   onClick={() => setIsCelsius(false)}
                   style={{
-                    background: !isCelsius ? "#007bff" : "white",
-                    color: !isCelsius ? "white" : "#007bff",
-                    border: "1px solid #007bff",
+                    background: !isCelsius ? "#051220ff" : "white",
+                    color: !isCelsius ? "white" : "#040e18ff",
+                    border: "1px solid #041221ff",
                     borderRadius: "5px",
                     padding: "5px 10px",
                     fontSize: "12px",
