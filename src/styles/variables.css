@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #0a2139;
+  --primary-dark: #071421;
+  --primary-darker: #051220;
+  --primary-darkest: #041221;
+  --secondary-color: #0d1b2b;
+  --text-primary: #171515;
+  --text-secondary: #666;
+  --background-light: #f0f0f0;
+  --white: #ffffff;
+  --red: #dc3545;
+  --border-color: #ddd;
+  --shadow: 0 2px 5px rgba(0,0,0,0.1);
+  --border-radius: 10px;
+  --border-radius-small: 5px;
+  --font-family: 'Arial', sans-serif;
+}
