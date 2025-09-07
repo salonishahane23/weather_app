@@ -1,0 +1,123 @@
+.weather-card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  margin: 0 auto 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+  max-width: 400px;
+  text-align: center;
+}
+
+.weather-card:hover {
+  transform: translateY(-3px);
+}
+
+.weather-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.weather-sub {
+  color: var(--text-secondary);
+  margin-bottom: 25px;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.weather-temp-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.weather-temp-box img {
+  width: 64px;
+  height: 64px;
+}
+
+.weather-temp {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.unit-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.unit-btn {
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius-small);
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  background: var(--white);
+  color: var(--primary-color);
+  transition: all 0.2s ease;
+  min-width: 35px;
+}
+
+.unit-btn.active {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.unit-btn:hover:not(.active) {
+  background: var(--primary-color);
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.detail-item {
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: var(--border-radius-small);
+}
+
+.detail-item p:first-child {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: normal;
+}
+
+.detail-item p:last-child {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+@media (max-width: 480px) {
+  .weather-temp-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .weather-temp {
+    font-size: 2.5rem;
+  }
+  
+  .weather-details {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
